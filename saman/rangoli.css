@@ -1,0 +1,140 @@
+/*
+Author: TakshakSH;
+Modified: 8th April, 2021;
+*/
+
+:root{
+	--white: #ffffff;
+	--black: #333333;
+	--bg: white;
+	
+	--text-color: #555;
+	--link-color: #639a67;
+	--link-hover: #205d67;
+	--primary-yellow: #FFBD4D;
+	--dark: #102020;
+	--light-gray: #B9B9B9;
+
+	--font-regular: "Roboto",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+
+	--shadow: 0px 33.2328px 99.6985px rgba(0, 0, 0, 0.18);
+	--shadow-button: 0px 18.6469px 55.9408px rgba(0, 0, 0, 0.18);
+}
+
+.funky{
+	--bg: hotpink;
+	--text-color: #fff;
+	--link-color: #B793E6;
+	--link-hover: #3532A7;
+}
+
+*{
+	transition: all .5s cubic-bezier(.25,.8,.25,1)!important;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--bg);
+	color: var(--text-color);
+	text-align: center;
+	background-color: var(--bg);
+	font-family: var(--font-regular);
+	opacity: .3;
+}
+
+.no-lr-padding{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+pre{
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6{}
+
+p{}
+
+
+
+
+
+
+@media all and (min-width: 992px) {
+	/* Nav Fixer*/
+  .navbar .nav-item .dropdown-menu{ display: none; }
+  .navbar .nav-item:hover .nav-link{ color: #578af0;  }
+  .navbar .nav-item:hover .dropdown-menu{
+    display: block;
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+  }
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+/*@media all and (max-width: 575px) {
+	
+	#Outer {
+	width: 100px !important;  
+	height: 10% !important;
+	}
+}*/
+
+/*background: url(img/arrow.svg) 11rem 1.4rem no-repeat;*/
+
+/*::-moz-selection { 
+  color: var(--text-dark);
+  background: var(--primary-yellow);
+}
+::selection {
+  color: var(--text-dark);
+  background: var(--primary-yellow);
+}
+::select:hover {
+  color: var(--text-dark);
+  background: var(--primary-yellow);
+}*/
+
+/*
+@font-face {
+  font-family: 'dinr';
+  src: url('fonts/dinr.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'dinb';
+  src: url('fonts/dinb.woff2') format('woff2');
+}
+*/
+
+/* Starter styling for DevIndia page */
+/*#Outer {
+	border: 2px solid black;
+	height: 300px;
+	position: relative;
+}
+img {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+  @media all and (max-width: 575px) {
+    #Outer {
+	width: 100px !important;  
+	height: 10% !important;
+	}
+}*/
